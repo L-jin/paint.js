@@ -1,0 +1,67 @@
+@import "reset.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+
+body {
+  background-color: aliceblue;
+  font-family: "ubuntu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(15, 15, 109, 0.24),
+    0 1px 3px rgba(15, 15, 109, 0.24);
+}
+
+.controls {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__btns {
+  margin-bottom: 30px;
+}
+
+.controls__btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: pink;
+  padding: 5px 0px;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid rgba(255, 86, 184, 0.2);
+  color: white;
+  margin-right: 5px;
+}
+
+.controls__btns button:active {
+  transform: scale(0.95);
+}
+
+.controls .controls_colors {
+  display: flex;
+}
+
+.controls_colors .controls__color {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(15, 15, 109, 0.24),
+    0 1px 3px rgba(15, 15, 109, 0.24);
+  margin-right: 5px;
+}
+
+.controls .controls__range {
+  margin-bottom: 20px;
+}
